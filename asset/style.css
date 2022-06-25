@@ -1,0 +1,268 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(227, 25%, 85%); }
+
+
+@font-face {
+    font-family: Poppins;
+    src: url("./font/Poppins-Regular.ttf");
+}
+
+body{
+    background-image: url("../images/bg-intro-desktop.png");
+    background-color: hsl(0, 100%, 74%) ;
+    font-family: Poppins;
+}
+
+main{
+    display: flex;
+}
+
+
+
+.textCon{
+    padding: 200px 20px 10px 300px;
+    /* border: 1px solid b  lack; */
+}
+
+.textCon h1{
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+    
+}
+
+.textCon p{
+    color: rgba(255, 255, 255, 0.871);
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+.formCon{
+    padding: 120px 50px 10px 100px;
+}
+
+.formCon h5{
+    background-color:   hsl(248, 32%, 49%);
+    padding-top: 12px;
+    height: 28px;
+    border-radius: 5px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.623);
+    font-weight: lighter;
+    font-size: 10px;
+    box-shadow: 0px 2px 0px 1px rgba(0, 0, 0, 0.286);
+}
+
+.formCon #try{
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+#form{
+    background-color: white;
+    height: 40vh;
+    width: 330px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 0px 1px rgba(0, 0, 0, 0.286);
+}
+
+#form .err{
+    color: red;
+    float: right;
+    font-size: 8px;
+    font-weight: 400;
+}
+
+.input{
+    margin: 10px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.166);
+    height: 30px;
+    width: 300px;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 20px;
+    background-position-x: 275px;
+    
+}
+
+.input::placeholder{
+    /* background-image: url("../images/icon-error.svg"); */
+    padding: 20px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.input:hover{
+    border: 2px solid  hsl(246, 25%, 77%);
+}
+
+#form img{
+    float: right;
+
+}
+
+#form #btn{
+    margin-top: 10px;
+    margin-left: 9px;
+    background-color: hsl(154, 59%, 51%);
+    color: rgba(255, 255, 255, 0.849);
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 5px;
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 308px;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+#form #terms{
+    font-size: 8px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.468);
+}
+
+#form #term{
+    color: red;
+}
+
+@media screen and (max-width: 1250px) {
+    .textCon{
+        padding: 200px 20px 10px 100px;
+        /* border: 1px solid b  lack; */
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .textCon{
+        padding: 200px 20px 10px 10px;
+        /* border: 1px solid b  lack; */
+    }
+
+    .formCon{
+        padding: 120px 50px 10px 0px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    main{
+        display: block;
+        text-align: center;
+        align-items: center;
+    }
+
+    .textCon{
+        padding: 50px 20px 10px 10px;
+        text-align: center;
+        /* border: 1px solid b  lack; */
+    }
+
+    .formCon{
+        padding: 30px 50px 10px 0px;
+        text-align: center;
+    }
+
+    .formCon h5{
+        background-color:   hsl(248, 32%, 49%);
+        margin-left: 20px;
+        padding-top: 12px;
+        height: 48px;
+        border-radius: 5px;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.623);
+        font-weight: lighter;
+        font-size: 10px;
+        box-shadow: 0px 2px 0px 1px rgba(0, 0, 0, 0.286);
+    }
+
+    #form{
+        background-color: white;
+        margin-left: 200px;
+        height: 40vh;
+        width: 330px;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0px 2px 0px 1px rgba(0, 0, 0, 0.286);
+    }
+
+    
+}
+
+@media screen and (max-width: 750px) {
+    
+    #form{
+        margin-left: 150px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    
+    #form{
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    
+    #form{
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    
+    #form{
+        height: 42vh;
+        margin-left: 30px;
+        width: 250px;
+        padding: 10px;
+    }
+
+    .textCon h1{
+        color: white;
+        font-weight: bold;
+        font-size: 25px;
+        
+    }
+    
+    .textCon p{
+        color: rgba(255, 255, 255, 0.871);
+        font-weight: lighter;
+        font-size: 11px;
+    }
+    
+
+    .textCon{
+        padding: 50px 20px 10px 10px;
+        text-align: center;
+        /* border: 1px solid b  lack; */
+    }
+
+    .input{
+        width: 215px;
+    }
+
+    .formCon h5{
+        padding: 12px 60px 0px 60px;
+        margin-left: 30px;
+        width: 150px;
+    }
+
+    #form #btn{
+        width: 220px;
+        margin-left: 2px;
+    }
+
+    #form #terms{
+        padding: 0px 22px 0px 22px;
+        font-weight: lighter;
+        text-align: center;
+        font-size: 9px;
+    }
+}

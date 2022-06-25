@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./asset/style.css">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+</head>
+<body>
+
+ <main>
+  <div class="textCon">
+   <h1> Learn to code by <br> watching others</h1>
+
+   <p id="para"> See how experienced developers solve problems in real-time. <br> Watching scripted tutorials is great, 
+    but understanding how <br> developers think is invaluable. </p>
+
+  </div>
+
+  <div class="formCon">
+
+    <h5><span id="try">Try it free 7 days</span> then $20/mo. thereafter</h5>
+    
+  <form  action="#" id="form" name="form"  onsubmit="return check()" >   
+   <input type="text" class="input" placeholder="First Name" name="fn" id="ss"><br>
+   <span id="em" class="err"></span>
+   <input type="text" class="input" placeholder="Last Name" name="ln" id="s" ><br>
+   <span id="em1" class="err"></span>
+   <input type="email" class="input" placeholder="Email Address" name="em" id="sss"><br>
+   <span id="em2" class="err"></span>
+   <input type="password" class="input"  placeholder="Password" name="pd " id="ssss"><br>
+   <span id="em3" class="err"></span>
+   <button id="btn" type="submit" >Claim your free trial </button>
+   <p id="terms">  By clicking the button, you are agreeing to our <span id="term">Terms and Services</span></p>
+  </form>
+  
+  </div>
+ </main>
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">justolusegun</a>.
+    </p>
+  </footer>
+
+
+  <script>
+    
+
+    function check(){
+      let inc = document.forms['form']['fn'].value;
+      let eM = 'First Name cannot be empty';
+      let eM1 = 'Last Name cannot be empty';
+      let eM2 = 'Looks like this is not an email';
+      let eM3 = 'Password cannot be empty';
+
+      if(inc == ""){
+        document.getElementById('form').style.height = '50vh'
+
+        document.getElementById('em').innerHTML = eM;
+        document.getElementById('em1').innerHTML = eM1;
+        document.getElementById('em2').innerHTML = eM2;
+        document.getElementById('em3').innerHTML = eM3;
+
+        document.getElementById('ss').style.borderColor = 'red'
+        document.getElementById('s').style.borderColor = 'red'
+        document.getElementById('sss').style.borderColor = 'red'
+        document.getElementById('ssss').style.borderColor = 'red'
+
+        document.getElementById('s').style.backgroundImage = "url(../images/icon-error.svg)"
+        document.getElementById('ss').style.backgroundImage = "url(../images/icon-error.svg)"
+        document.getElementById('sss').style.backgroundImage = "url(../images/icon-error.svg)"
+        document.getElementById('ssss').style.backgroundImage = "url(../images/icon-error.svg)"
+        return false;
+        
+      }
+    }
+  </script>
+</body>
+</html>
